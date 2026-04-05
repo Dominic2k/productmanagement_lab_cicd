@@ -46,7 +46,7 @@ jobs:
               run: |
                   cp ${{ github.workspace }}/target/*.jar \
                      /home/dominic2k/product_project/product_source/product-management.jar
-                  chown ubuntu:ubuntu /home/dominic2k/product_project/product_source/product-management.jar
+                  chown dominic2k:dominic2k /home/dominic2k/product_project/product_source/product-management.jar
 
     deploy:
         name: Deploy Project
