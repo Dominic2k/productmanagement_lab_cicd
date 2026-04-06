@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SysController {
     @GetMapping("/status")
     public ResponseEntity<Object> getStatus() {
-        String msg = "Service is running - " + Instant.now().toString();
+        String msg = "Service is running at - " + Instant.now().toString();
         return ResponseEntity.ok(msg);
     }
 }
